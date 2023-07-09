@@ -21,6 +21,6 @@ export class CartItem extends Component {
 
     public async getName(): Promise<string> {
         const [name] = await this.element.waitForXpath(SELECTORS.name);
-        return name.textContent
+        return name.textContent;
     }
 }

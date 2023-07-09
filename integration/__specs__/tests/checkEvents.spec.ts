@@ -79,9 +79,3 @@ describe('Cart page content', () => {
         
     });
 });
-
-
-
-
-
-

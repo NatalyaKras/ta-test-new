@@ -52,15 +52,12 @@ export class CartPageContainer extends Container {
 
     public async createNewItem(): Promise<void> {
         const [inputName] = await document.waitForXpath(SELECTORS.inputName);
-        await document.waitForXpath(SELECTORS.inputName);
         fireEvent.change(inputName, {target:{value: 'My beloved item'}});
 
         const [inputPrice] = await document.waitForXpath(SELECTORS.inputPrice);
-        await document.waitForXpath(SELECTORS.inputPrice);
         fireEvent.change(inputPrice, {target:{value: 23}});
 
         const [inputQuantity] = await document.waitForXpath(SELECTORS.inputQuantity);
-        await document.waitForXpath(SELECTORS.inputQuantity);
         fireEvent.change(inputQuantity, {target:{ value: 4}});
       }
 
